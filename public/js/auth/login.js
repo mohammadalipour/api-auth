@@ -13,18 +13,15 @@ $(document).on('submit', '#login-form', function (e) {
         $('.login-message').text(data.message);
 
         if(data.success){
-            window.location.replace("/pane/home");
+            localStorage.setItem('token',data.token);
+            window.location.replace("/panel/home");
         }
     }).fail(function (data) {
-        if (jQuery.isEmptyObject(data.responseJSON)) {
-            // location.reload();
-        } else {
             $.each(data, function (key, value) {
                 $.each(value.errors, function (k, v) {
                     $('.login-message').addClass('has-error');
                     $('.login-message').text(v);
                 });
             });
-        }
     });
 });

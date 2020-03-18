@@ -11,5 +11,5 @@
         @yield('content')
     </body>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/auth/login.js') }}"></script>
+{{--    <script src="{{ asset('js/auth/login.js') }}"></script>--}}
 </html>

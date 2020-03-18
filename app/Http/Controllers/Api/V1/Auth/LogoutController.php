@@ -10,6 +10,6 @@ class LogoutController extends ApiController
 {
     public function index()
     {
-        
+        $token = auth()->logout();
     }
 }

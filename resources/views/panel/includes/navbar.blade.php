@@ -10,12 +10,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="">
-                        <i class="material-icons">open_in_browser</i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="{{route('logout')}}">
                         <i class="material-icons">exit_to_app</i>
                         <p>
                             <span class="d-lg-none d-md-block">Stats</span>
