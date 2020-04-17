@@ -17,7 +17,7 @@ config db connection on .env file
     DB_CONNECTION=mysql
     DB_HOST=db
     DB_PORT=3306
-    DB_DATABASE=db
+    DB_DATABASE=api_auth
     DB_USERNAME=root
     DB_PASSWORD=123qwe
 ```
@@ -30,9 +30,9 @@ config db connection on .env file
 
 ```
 7-docker-compose exec db bash
-8- mysql> CREATE DATABASE snapp_market;
+8- mysql> CREATE DATABASE api_auth;
 9- mysql> mysql -u root -p
-10- mysql> GRANT ALL ON snapp_market.* TO 'root'@'%' IDENTIFIED BY '123qwe';
+10- mysql> GRANT ALL ON api_auth.* TO 'root'@'%' IDENTIFIED BY '123qwe';
 11- mysql> FLUSH PRIVILEGES;
 12- mysql> EXIT;
 13-exit
