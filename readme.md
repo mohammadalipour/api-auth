@@ -17,7 +17,7 @@ config db connection on .env file
     DB_CONNECTION=mysql
     DB_HOST=db
     DB_PORT=3306
-    DB_DATABASE=snapp_market
+    DB_DATABASE=db
     DB_USERNAME=root
     DB_PASSWORD=123qwe
 ```
